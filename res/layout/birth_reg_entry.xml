@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="#B85C8A" >
+
+        <TextView
+            android:id="@+id/tvHead"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:shadowColor="#171717"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="1"
+            android:text="@string/welcome_text"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/head"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/clrOffwhite"
+            android:orientation="vertical" >
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/tvHead" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_gravity="center_horizontal" -->
+            <!-- android:background="@color/clrPink" -->
+            <!-- android:gravity="center_horizontal" -->
+            <!-- android:text="@string/binfo" /> -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/slno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/btn_default_normal_blue"
+                    android:gravity="right"
+                    android:text="12"
+                    android:textColor="@color/clrWhite"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tvlblMname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="3dp"
+                            android:text="माँ का नाम "
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/tvMname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/clrWhite"
+                            android:text="--"
+                            android:textColor="@color/helpColor" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvDob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:text="जन्म की तारीख "
+                        android:textSize="20dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <DatePicker
+                android:id="@+id/dtpDob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp" />
+
+            <TableRow
+                android:id="@+id/child_name_tblrow"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="left|center"
+                    android:text="बच्चे का नाम "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/child_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:ems="10"
+                    android:hint="बच्चे का नाम " />
+            </TableRow>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:weightSum="100" >
+
+                <RadioGroup
+                    android:id="@+id/rgBstat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="100"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rbLive"
+                        android:layout_weight="40"
+                        android:checked="true"
+                        android:text="जन्म"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbAbort"
+                        android:layout_marginLeft="22dp"
+                        android:layout_weight="30"
+                        android:text="गर्भपात"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbStillBirth"
+                        android:layout_weight="30"
+                        android:text="मृत शिशु "
+                        android:textSize="18dp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPob"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:measureWithLargestChild="false"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <TextView
+                    android:id="@+id/tvPob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="40"
+                    android:gravity="center_vertical"
+                    android:text="जन्म कहाँ हुआ "
+                    android:textSize="18dp" />
+
+                <RadioGroup
+                    android:id="@+id/rgPob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_weight="60"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rbHome"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:checked="false"
+                        android:text="घर"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbHosp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:text="अस्पताल"
+                        android:textSize="18dp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llGender"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <TextView
+                    android:id="@+id/tvGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="40"
+                    android:gravity="center_vertical"
+                    android:text="परिणाम"
+                    android:textSize="18dp" />
+
+                <RadioGroup
+                    android:id="@+id/rgGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_weight="60"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rbBoy"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="22dp"
+                        android:layout_weight="30"
+                        android:checked="false"
+                        android:text="लड़का"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbGirl"
+                        android:layout_height="35dp"
+                        android:layout_weight="30"
+                        android:text="लड़की "
+                        android:textSize="18dp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llWeight"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvEDD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.5"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:text="वजन "
+                    android:textSize="18dp" />
+
+                <com.asha.mnewborncareasha.control.NumberPicker
+                    android:id="@+id/npWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" >
+                </com.asha.mnewborncareasha.control.NumberPicker>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bg_footer"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnSaveBirth"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="05dp"
+            android:background="@drawable/button_color"
+            android:drawableLeft="@drawable/save_24"
+            android:drawablePadding="10dp"
+            android:gravity="left|center"
+            android:paddingLeft="10dp"
+            android:text="सेव"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="#B85C8A" >
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:shadowColor="#171717"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="1"
+            android:text="@string/welcome_text"
+            android:textColor="#ffffff"
+            android:textSize="27sp" />
+    </LinearLayout>
+
+    <!-- <View -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="3dip" -->
+    <!-- android:layout_marginLeft="2dip" -->
+    <!-- android:layout_marginRight="2dip" -->
+    <!-- android:background="#FF80BF" /> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.3"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="0.43"
+                android:src="@drawable/logo_dashboard" />
+
+            <ImageView
+                android:layout_width="100dip"
+                android:layout_height="120dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="22dp"
+                android:layout_weight="0.50"
+                android:src="@drawable/msakhi_logo" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:background="#5B92FE" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_margin="5dip"
+        android:layout_weight="0.7"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <!-- vertical 1 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <!-- horizental 1 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dip"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnMPreg"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="3dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg1"
+                    android:drawableRight="@drawable/p"
+                    android:shadowColor="#171717"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="3"
+                    android:text="\n\n\nगर्भवती"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnAncVisit"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="3dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg2"
+                    android:drawableRight="@drawable/ancv"
+                    android:shadowColor="#171717"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="3"
+                    android:text="\n\nगृह भ्रमण (ए.एन.सी)"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnMBirth"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg3"
+                    android:drawableRight="@drawable/cb"
+                    android:shadowColor="#171717"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="3"
+                    android:text="\n\n\nजन्म"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- vertical 2 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <!-- horizental 2 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dip"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnMVisit"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="3dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg4"
+                    android:drawableRight="@drawable/home"
+                    android:shadowColor="#171717"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="3"
+                    android:text="\n\nगृह भ्रमण "
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnCouncel"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="3dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg5"
+                    android:drawableRight="@drawable/c"
+                    android:shadowColor="#171717"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="3"
+                    android:text="\n\n\nसलाह"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnMLearn"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg6"
+                    android:drawableRight="@drawable/sl"
+                    android:shadowColor="#171717"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="3"
+                    android:text="\n\n\nसीखें"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="3dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg8"
+                    android:drawableRight="@drawable/up"
+                    android:shadowColor="#171717"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="3"
+                    android:text="\n\n\nUpdate"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- vertical 3 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.8"
+            android:orientation="vertical" >
+
+            <!-- horizental 3 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dip"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnReport"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="3dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg7"
+                    android:drawableRight="@drawable/re"
+                    android:shadowColor="#171717"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="3"
+                    android:text="\n\n\nरिपोर्ट"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnWebview"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/dash_button"
+                    android:shadowColor="#171717"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="3"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnDreport"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg9"
+                    android:drawableRight="@drawable/de"
+                    android:shadowColor="#171717"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="3"
+                    android:text="\n\n\nमृत्यु"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

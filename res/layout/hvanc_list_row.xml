@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res/com.asha.mnewborncareasha"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!-- ListRow Left sied Thumbnail image -->
+
+<!--     <LinearLayout -->
+<!--         android:id="@+id/thumbnail" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignParentLeft="true" -->
+<!--         android:layout_marginRight="5dip" -->
+<!--         android:background="@drawable/image_bg" -->
+<!--         android:padding="3dip" > -->
+        
+        
+     <com.pkmmte.circularimageview.CircularImageView
+            android:id="@+id/list_image"
+            android:layout_width="55dip"
+            android:layout_height="55dp"
+            android:layout_marginLeft="05dp"
+             android:layout_alignParentLeft="true"
+             android:layout_marginRight="2dip"
+             android:layout_centerVertical="true"
+           android:src="@drawable/no_image" 
+        app:border="true"
+        app:border_color="#ffffff"
+        app:border_width="2dp"
+        app:selector="true"
+        app:selector_color="#4403a9f4"
+        app:selector_stroke_color="#aa5677fc"
+        app:selector_stroke_width="2dp"
+        app:shadow="true"/>    
+        
+ 
+
+    <TextView
+        android:id="@+id/name_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/list_image"
+        android:layout_toRightOf="@+id/list_image"
+        android:text="Rihanna"
+        android:textColor="#040404"
+        android:textSize="14dip"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/edd_entry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dip"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@id/name_entry"
+        android:text="2012-09-08"
+        android:textColor="#343434"
+        android:textSize="10dip" />
+
+    <TextView
+        android:id="@+id/home_visit_leg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_entry"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/list_image"
+        android:text="| 1 | 2 | 3 |"
+        android:textColor="@color/helpColor"
+        android:textSize="12dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/home_visit_ind"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_visit_leg"
+        android:layout_toRightOf="@+id/list_image"
+        android:text="| * | * | * | "
+        android:textColor="@color/backColor1"
+        android:textSize="12dip"
+        android:textStyle="bold" />
+
+    <!-- Rightend Duration -->
+
+    <TextView
+        android:id="@+id/slno"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="18dp"
+        android:layout_alignTop="@id/name_entry"
+        android:layout_marginRight="2dip"
+        android:background="@drawable/btn_default_normal_blue"
+        android:gravity="right"
+        android:text="12"
+        android:textColor="@color/clrWhite"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

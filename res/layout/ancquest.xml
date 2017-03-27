@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bg_footer"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+           android:layout_marginTop="5dp"
+           android:padding="10dp"
+              android:layout_marginBottom="5dp"
+            android:layout_weight="50"
+            android:background="@drawable/button_color"
+            android:drawableLeft="@drawable/arrow_left_24"
+            android:gravity="left|center"
+             android:drawablePadding="10dp"
+            android:text=" पिछले उत्तर"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="05dp"
+            android:layout_weight="50"
+            android:background="@drawable/button_color"
+            android:drawableLeft="@drawable/arrow_right_24"
+            android:drawablePadding="10dp"
+            android:gravity="left|center"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:text=" आगे"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llBase"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/buttons"
+        android:layout_alignParentLeft="true"
+        android:background="@color/clrOffwhite"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/btnHelp"
+                android:layout_width="1dp"
+                android:layout_height="55dp"
+                android:background="@drawable/btn_bg"
+                android:src="@drawable/help" />
+ <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="45dip"
+    android:background="#B85C8A">
+      <TextView
+           android:id="@+id/tvHead"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:shadowColor="#171717"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="1"
+            android:text="@string/welcome_text"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+    </LinearLayout>
+            
+<!--             <TextView -->
+<!--                 android:id="@+id/tvHead" -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="fill_parent" -->
+<!--                 android:layout_alignParentLeft="true" -->
+<!--                 android:layout_alignParentTop="true" -->
+<!--                 android:background="@color/clrPink" -->
+<!--                 android:gravity="center_horizontal|center_vertical" -->
+<!--                 android:text="गृह भ्रमण " -->
+<!--                 android:textSize="20dp" /> -->
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnQuest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_button_lblue"
+            android:text=".."
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imgAnc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/np_numberpicker_up_normal_holo_light" />
+
+        <RadioGroup
+            android:id="@+id/rdgpYesNo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/gradient_bg"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <RadioButton
+                android:id="@+id/rbYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:checked="true"
+                android:text="हाँ"
+                android:textColor="@color/backColor"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="नहीं"
+                android:textColor="@color/clrMGreen"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/llnuminput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <com.asha.mnewborncareasha.control.NumberPicker
+                android:id="@+id/npNumInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+            </com.asha.mnewborncareasha.control.NumberPicker>
+
+            <TextView
+                android:id="@+id/tvNumInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="...." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llspninput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Spinner
+                android:id="@+id/spnMchInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lldtp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_default_pressed"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_default_pressed"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

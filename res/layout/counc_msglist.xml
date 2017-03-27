@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/clrOffwhite"
+    android:orientation="vertical" >
+ <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="45dip"
+    android:background="#B85C8A">
+      <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:shadowColor="#171717"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="1"
+            android:text="@string/welcome_text"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+    </LinearLayout>
+    
+<!--         <TextView -->
+<!--             android:id="@+id/tvHead" -->
+<!--             android:layout_width="fill_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_gravity="center_horizontal" -->
+<!--             android:layout_marginBottom="20dp" -->
+<!--             android:background="@color/clrPink" -->
+<!--             android:gravity="center_horizontal" -->
+<!--             android:text="लाभार्थी संदेश " /> -->
+
+ <ListView
+     android:id="@android:id/list"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:choiceMode="singleChoice"
+     android:divider="#b5b5b5"
+     android:dividerHeight="1dp" >
+ </ListView>
+
+    </LinearLayout>

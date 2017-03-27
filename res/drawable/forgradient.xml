@@ -1,0 +1,53 @@
+<!-- <shape xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!-- android:shape="rectangle"> -->
+<!--      Gradient Bg for listrow -->
+<!--  <stroke -->
+<!--                 android:width="1dp" -->
+<!--                 android:color="#000000" /> -->
+<!--  <corners -->
+<!--                 android:radius="8dp" />  -->
+   
+<!--    <gradient -->
+<!--       android:startColor="#B85C8A" -->
+<!--       android:centerColor="#B85C8A" -->
+<!--       android:endColor="#B85C8A" -->
+<!--       android:angle="270" /> -->
+<!-- </shape> -->
+
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" >
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+
+    <stroke
+                android:width="1dp"
+                android:color="#000000" />
+ <corners
+                android:radius="8dp" /> 
+   
+   <gradient
+      android:startColor="#ffffff"
+      android:centerColor="#ffffff"
+      android:endColor="#ffffff"
+      android:angle="270" />
+
+ </shape>
+ </item>
+  <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+
+    <stroke
+                android:width="1dp"
+                android:color="#000000" />
+ <corners
+                android:radius="8dp" /> 
+   
+   <gradient
+      android:startColor="#B85C8A"
+      android:centerColor="#B85C8A"
+      android:endColor="#B85C8A"
+      android:angle="270" />
+ </shape>
+    </item>
+   
+</selector> 

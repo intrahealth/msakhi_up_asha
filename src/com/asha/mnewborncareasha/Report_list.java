@@ -1,0 +1,68 @@
+package com.asha.mnewborncareasha;
+
+//import com.intrahealth.mnewborncare.control.BadgeView;
+
+import android.app.Activity;
+
+import android.content.Intent;
+
+//import android.graphics.Typeface;
+import android.os.Bundle;
+import android.view.View;
+import android.view.Window;
+import android.view.View.OnClickListener;
+
+import android.widget.Button;
+
+public class Report_list extends Activity {
+
+	Intent i;
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		setContentView(R.layout.report_list);
+		Button btnHVList = (Button) findViewById(R.id.btnHVList);
+		Button btnDList = (Button) findViewById(R.id.btnDlist);
+		Button btnAbortRep = (Button) findViewById(R.id.btnAbortRep);
+
+		btnHVList.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(getApplicationContext(),
+						Reporthv.class);
+				intent.putExtra("rep_type", "hvlist");
+				startActivity(intent);
+			}
+		});
+
+		btnDList.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(getApplicationContext(),
+						Report.class);
+				intent.putExtra("rep_type", "drep");
+				startActivity(intent);
+			}
+		});
+
+		btnAbortRep.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(getApplicationContext(),
+						Report.class);
+				intent.putExtra("rep_type", "abrep");
+				startActivity(intent);
+			}
+		});
+
+	}
+
+}

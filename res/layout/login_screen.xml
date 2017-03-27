@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:background="#B85C8A" >
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:shadowColor="#171717"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="1"
+            android:text="@string/welcome_text"
+            android:textColor="#ffffff"
+            android:textSize="27sp" />
+    </LinearLayout>
+    <!-- <View -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="3dip" -->
+    <!-- android:layout_marginLeft="2dip" -->
+    <!-- android:layout_marginRight="2dip" -->
+    <!-- android:background="#66B85C8A" /> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:src="@drawable/msakhi_logo" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:background="#66FB8665" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:layout_margin="25dip"
+        android:layout_weight="0.7"
+        android:background="#B85C8A"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/enterPin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:shadowColor="#171717"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="1"
+                android:text="@string/enterpin"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/pinEDTXT"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/edittext_bg"
+                android:gravity="center"
+                android:hint="@string/defaultpin"
+                android:shadowColor="#171717"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="1"
+                android:textColor="#f68809"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/btn_bg_custom"
+                android:shadowColor="#171717"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="3"
+                android:text="@string/sign_in"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/slno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:shadowColor="@color/backColor1"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="12"
+                android:textColor="@color/clrWhite"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.24"
+            android:background="@drawable/bg_footer_ll"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="#B85C8A"
+                android:gravity="center|bottom"
+                android:shadowColor="#171717"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="1"
+                android:text="Contact us:  msakhi@intrahealth.org"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:background="#66FB8665" />
+
+</LinearLayout>
